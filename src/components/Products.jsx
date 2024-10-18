@@ -71,12 +71,12 @@ const Products = () => {
       {products.map((elem, index) => (
         <Product key={index} val={elem} mover={mover} index={index} />
       ))}
-      <div className="w-full h-full absolute top-0 pointer-events-none ">
+      <div className="w-full absolute top-0 pointer-events-none ">
         <motion.div
           initial={{ y: pos, x: "-50%" }}
-          animate={{ y: pos + "rem" }}
+          animate={{ y: pos + "rem", scale: 1.2 }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }}
-          className="window w-[32rem] h-[23rem] left-[43%] absolute overflow-hidden rounded-xl"
+          className="window w-[32rem] h-[23rem] left-[44%] absolute overflow-hidden rounded-xl"
         >
           <motion.div
             animate={{ y: -pos + "rem" }}
